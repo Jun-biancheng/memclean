@@ -129,7 +129,9 @@ fn main() {
                 println!("[1/2] 准备优化内存...");
                 println!("正在优化内存...");
                 match optimize_memory() {
-                    Ok(_) => println!(" ✓ 内存优化完成"),
+                    Ok(_) => println!(" ✓ 内存优化完成"),git init
+
+
                     Err(e) => println!(" ✗ 内存优化失败: {}", e),
                 };
             } else {
