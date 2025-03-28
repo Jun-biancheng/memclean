@@ -1,0 +1,24 @@
+[package]
+name = "myclean"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clipboard-win = "5.4.0"
+windows = { version = "0.48", features = [
+    "Win32_Foundation",
+    "Win32_System_Com",
+    "Win32_System_SystemInformation",
+    "Win32_System_LibraryLoader",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging", 
+    "Win32_Data_Xml_XmlLite",
+    "Win32_System_Memory",
+    "Win32_System_Threading",
+    "Win32_System_Console",
+    "Win32_System_ProcessStatus",
+    "Win32_System_Performance"
+]}
+
+[build-dependencies]
+winres = "0.1"
